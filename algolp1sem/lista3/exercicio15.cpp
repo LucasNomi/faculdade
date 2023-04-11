@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
         {
             cout << "Voce tem atualmente: " << balFinal << " Reais" << endl;
 
-            cout << "Realizar \n (1) deposito \n (2) retirada";
+            cout << "Realizar \n (1) deposito \n (2) retirada \n";
             cin >> codigoTrans;
 
             if (codigoTrans == 1)
@@ -51,15 +51,15 @@ int main(int argc, char const *argv[])
 
         if (balFinal < minBal)
         {
-            balFinal - taxServ;
+            balFinal = balFinal - taxServ;
         }
 
         cout << "Numero conta: " << numeroConta << endl;
 
-        if (balFinal < 0)
+        if (balFinal <= 0)
         {
             balFinal = 0;
-            cout << "Balanco calculado: NAO HA FUNDOS";
+            cout << "Balanco calculado: NAO HA FUNDOS \n";
         }
         else
         {
