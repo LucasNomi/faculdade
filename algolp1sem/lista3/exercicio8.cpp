@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     qtdSimFem=0;
     qtdNaoMasc=0;
 
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 2000; i++)
     {
         cout << "Sexo do participante (M/F) \n";
         cin >> sexo;
