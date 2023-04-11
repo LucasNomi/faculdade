@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     contadorFem = 0;
     contadorPessoa = 0;
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 50; i++)
     {
         cout << "Sexo da pessoa (M/F) ";
         cin >> sexo;
