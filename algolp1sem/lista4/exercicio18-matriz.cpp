@@ -8,7 +8,8 @@ int main(int argc, char const *argv[])
     int arraySoma[3];
 
     soma = 0;
-
+    
+    // Entra com valores na matriz
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -20,8 +21,9 @@ int main(int argc, char const *argv[])
         }
     }
 
+    // Soma os valores das coluna da matriz e adiciona em um array
     for (int i = 0; i < 3; i++)
-    {
+    {   
         for (int j = 0; j < 3; j++)
         {
             soma += matriz[j][i];
@@ -30,6 +32,7 @@ int main(int argc, char const *argv[])
         soma = 0;
     }
 
+    // Desenha o array na tela
     for (int i = 0; i < 3; i++)
     {
         cout << arraySoma[i] << " ";

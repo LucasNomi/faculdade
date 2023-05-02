@@ -7,6 +7,7 @@ int main(int argc, char const *argv[])
     float arrEntrada[10];
     float maior, menor;
 
+    // Entra com valores no vetor
     for (int i = 0; i < size(arrEntrada); i++)
     {
         cout << "Entre com um valor numerico: ";
@@ -15,8 +16,10 @@ int main(int argc, char const *argv[])
         arrEntrada[i] = valor;
     }
 
+    //Acha os maiores e menores valores do vetor
     for (int i = 0; i < size(arrEntrada); i++)
     {
+        // Quando na primeira pos do vetor, assume maior e menor valor
         if (i == 0)
         {
             maior = arrEntrada[i];
@@ -24,6 +27,8 @@ int main(int argc, char const *argv[])
         }
         else
         {
+            // encontra outros valores menores ou maiores, se existirem nas
+            // prox posicoes do vetor
             if (arrEntrada[i] > maior)
             {
                 maior = arrEntrada[i];

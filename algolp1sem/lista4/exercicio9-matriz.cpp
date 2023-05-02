@@ -8,6 +8,7 @@ int main(int argc, char const *argv[])
 
     soma = 0;
 
+    // Entra com valores na matriz
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -23,6 +24,9 @@ int main(int argc, char const *argv[])
     {
         for (int j = 0; j < 3; j++)
         {
+            // Se i for maior que j, então estamos em uma posição
+            // abaixo da diagonal principal. 
+            //Somamos todos os valores abaixo da diagonal principal
             if (i > j)
             {
                 soma += matriz[i][j];
